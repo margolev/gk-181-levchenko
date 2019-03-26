@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>|</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+	</head>
+	<body>
+		<div id="panel">
+			<form>
+			  <div class="form-group">
+			    <label for="exampleFormControlInput1">Email address</label>
+			    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="Email">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleFormControlSelect1">Example select</label>
+			    <select class="form-control" id="exampleFormControlSelect1">
+			      <option>1</option>
+			      <option>2</option>
+			      <option>3</option>
+			      <option>4</option>
+			      <option>5</option>
+			    </select>
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleFormControlSelect2">Example multiple select</label>
+			    <select multiple class="form-control" id="exampleFormControlSelect2">
+			      <option>1</option>
+			      <option>2</option>
+			      <option>3</option>
+			      <option>4</option>
+			      <option>5</option>
+			    </select>
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleFormControlTextarea1">Example textarea</label>
+			    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Textarea"></textarea>
+			  </div>
+			</form>
+		</div>
+		<p class="slide"><a href="#" class="btn-slide">Открыть</a></p>
+
+		<script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
+		<script type='text/javascript' src='bootstrap.bundle.min.js'></script>
+		<script type="text/javascript">
+		
+		$(document).ready(function(){
+			$(".btn-slide").click(function(){
+				$("#panel").slideToggle("slow");
+				$(this).toggleClass("active"); return false;
+			}); 
+		});
+		
+		</script>
+	</body>
+</html>
